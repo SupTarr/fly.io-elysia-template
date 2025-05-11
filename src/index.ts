@@ -1,5 +1,5 @@
 import { Elysia } from "elysia";
 
-const app = new Elysia().get("/", () => "Hello Elysia");
+const app = new Elysia().get("/hello", () => "Hello Elysia");
 
-export default app.fetch;
+export default app.handle;
