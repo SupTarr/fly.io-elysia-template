@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "tsx watch index.ts",
     "build": "tsc index.ts --outDir dist",
-    "start": "NODE_ENV=production node dist/index.js"
+    "start": "bun run -bun index.ts"
   },
   "dependencies": {
     "@elysiajs/node": "^1.2.6",
