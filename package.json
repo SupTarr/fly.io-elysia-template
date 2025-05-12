@@ -3,7 +3,7 @@
   "version": "1.0.50",
   "type": "commonjs",
   "scripts": {
-    "dev": "tsx watch index.ts",
+    "dev": "bun run -bun index.ts",
     "build": "tsc index.ts --outDir dist",
     "start": "bun run -bun index.ts"
   },
