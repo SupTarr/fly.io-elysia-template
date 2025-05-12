@@ -3,9 +3,8 @@
   "version": "1.0.50",
   "type": "commonjs",
   "scripts": {
-    "dev": "bun run -bun index.ts",
-    "build": "bun-vercel index.ts",
-    "start": "bun run --bun index.ts"
+    "dev": "bun run --bun i./src/main.ts",
+    "build": "bun-vercel ./src/main.ts"
   },
   "dependencies": {
     "@elysiajs/node": "^1.2.6",
