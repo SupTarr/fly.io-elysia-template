@@ -1,4 +1,4 @@
 "use strict";
-var Elysia = require("elysia");
+var { Elysia } = require("elysia");
 const app = new Elysia().get("/hello", () => "Hello Elysia");
 module.exports = app.fetch;
