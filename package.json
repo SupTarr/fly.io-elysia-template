@@ -13,5 +13,4 @@
     "@flydotio/dockerfile": "latest",
     "bun-types": "latest"
   },
-  "module": "src/index.js"
 }
