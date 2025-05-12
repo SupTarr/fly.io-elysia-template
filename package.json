@@ -2,14 +2,18 @@
   "name": "vercel-elysia-template",
   "version": "1.0.50",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "bun run --watch index.ts"
+    "dev": "tsx watch index.ts",
+    "build": "tsc index.ts --outDir dist",
+    "start": "NODE_ENV=production node dist/index.js"
   },
   "dependencies": {
-    "elysia": "latest"
+    "@elysiajs/node": "^1.2.6",
+    "elysia": "^1.3.1"
   },
   "devDependencies": {
-    "bun-types": "latest"
-  },
-  "module": "api/index.js"
+    "@types/node": "^22.15.17",
+    "bun-types": "latest",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  }
 }
