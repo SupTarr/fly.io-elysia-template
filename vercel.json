@@ -1,6 +1,5 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "installCommand": "curl -fsSL https://bun.sh/install | bash && ~/.bun/bin/bun install --frozen-lockfile",
-  "buildCommand": "echo 'No build step required'",
-  "devCommand": "~/.bun/bin/bun -bun index.ts"
+  "buildCommand": "bun-vercel ./index.ts'"
 }

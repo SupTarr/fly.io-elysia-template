@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "bun run -bun index.ts",
     "build": "tsc index.ts --outDir dist",
-    "start": "bun run -bun index.ts"
+    "start": "bun run --bun index.ts"
   },
   "dependencies": {
     "@elysiajs/node": "^1.2.6",
@@ -16,6 +16,7 @@
     "@types/node": "^22.15.17",
     "bun-types": "latest",
     "tsx": "^4.19.4",
-    "typescript": "^5.8.3"
+    "typescript": "^5.8.3",
+    "bun-vercel": "^1.0.0-alpha.5"
   }
 }
