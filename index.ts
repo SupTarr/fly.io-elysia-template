@@ -1,7 +1,5 @@
 import { Elysia } from 'elysia'
-import { node } from '@elysiajs/node'
 
-const app = new Elysia({ adapter: node() })
+const app = new Elysia()
     .get('/', () => 'Hello Node!')
-
-export default app.fetch;
+    .listen(3000)
