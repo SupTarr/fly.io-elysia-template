@@ -1,5 +1,5 @@
-import { Elysia } from "elysia";
+var Elysia = require("elysia");
 
 const app = new Elysia().get("/hello", () => "Hello Elysia");
 
-export default app.fetch;
+module.exports = app.fetch;
